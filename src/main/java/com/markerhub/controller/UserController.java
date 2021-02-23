@@ -22,7 +22,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/index")
-    public Object index(){
-        return userService.getById(1L);
+    public String index(){
+        return "123";
     }
 }
