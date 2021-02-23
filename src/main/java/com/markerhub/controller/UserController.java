@@ -25,4 +25,9 @@ public class UserController {
     public String index(){
         return "123";
     }
+
+    @RequestMapping("/health_check")
+    public String healthCheck(){
+        return "ok";
+    }
 }
