@@ -1,6 +1,7 @@
 package com.markerhub.controller;
 
 
+import com.markerhub.common.lang.Result;
 import com.markerhub.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +28,9 @@ public class UserController {
     }
 
     @RequestMapping("/health_check")
-    public String healthCheck(){
-        return "ok";
+    public Result healthCheck() {
+        int i = 1;
+
+        return Result.succ("asdasdasdasd");
     }
 }

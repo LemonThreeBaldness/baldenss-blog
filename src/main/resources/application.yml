@@ -5,10 +5,13 @@ spring:
     url: jdbc:mysql://localhost:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: root
+  redis:
+    host:
+
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
-server:
-  port: 8082
+server:n
+  port: 8083
 shiro-redis:
   enabled: true
   redis-manager:
