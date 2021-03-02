@@ -10,11 +10,8 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * <p>
- * 
- * </p>
  *
- * @author 关注公众号：MarkerHub
+ * @author cc
  * @since 2021-02-22
  */
 @Data
