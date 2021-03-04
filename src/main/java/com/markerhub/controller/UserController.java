@@ -33,10 +33,6 @@ public class UserController {
         return Result.succ("asdasdasdasd");
     }
 
-//    @PostMapping("/save")
-//    public Result testUser(@Validated @RequestBody User user) {
-//        return Result.succ(user);
-//    }
 
     @PostMapping("/save")
     public Object testUser(@Validated @RequestBody User user) {
