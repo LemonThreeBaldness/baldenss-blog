@@ -39,6 +39,7 @@ public class AccountRealm extends AuthorizingRealm {
 
         User user =  userService.getById(Long.valueOf(userId));
 
+
         if(user==null){
             throw  new UnknownAccountException("账户不存在");
         }

@@ -19,6 +19,7 @@ public class JwtUtils {
     private long expire;
     private String header;
 
+
     /**
      * 生成jwt token
      */
@@ -55,6 +56,8 @@ public class JwtUtils {
     public boolean isTokenExpired(Date expiration) {
         return expiration.before(new Date());
     }
+
+
 }
 
 
