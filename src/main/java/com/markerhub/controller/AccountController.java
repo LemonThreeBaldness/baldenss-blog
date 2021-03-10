@@ -34,8 +34,9 @@ public class AccountController {
 
         User user = userService.getOne(new QueryWrapper<User>().eq("username", loginDto.getUsername()));
         Assert.notNull(user, "用户不存在");
-
-        if (!user.getPassword().equals(SecureUtil.md5(loginDto.getPassword()))) {
+        String userPassword = user.getPassword();
+        String md5Password = SecureUtil.md5(loginDto.getPassword());
+        if (!userPassword.equals(md5Password)) {
             System.out.println("..." + user.getPassword());
             System.out.println("当前密码：==》"+SecureUtil.md5(loginDto.getPassword()));
             return Result.fail("密码不正确");
